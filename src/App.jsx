@@ -50,7 +50,7 @@ const Typewriter = () => {
 
   return (
     <span className="inline-block min-w-[280px] text-left">
-      <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+      <span className="text-indigo-600">
         {currentText}
       </span>
       <motion.span
@@ -276,10 +276,10 @@ function App() {
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                   className="bg-white/80 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-xl shadow-indigo-500/5 hover:shadow-2xl hover:shadow-indigo-500/10 hover:border-indigo-200 transition-all group"
                 >
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-lg shadow-indigo-500/20`}>
+                  <div className="w-14 h-14 rounded-2xl bg-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-lg shadow-indigo-500/20">
                     <feature.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-slate-900 font-bold text-2xl mb-3 tracking-tight">{feature.title}</h3>
+                  <h3 className="text-indigo-600 font-bold text-2xl mb-3 tracking-tight">{feature.title}</h3>
                   <p className="text-slate-600 leading-relaxed">
                     {feature.desc}
                   </p>
