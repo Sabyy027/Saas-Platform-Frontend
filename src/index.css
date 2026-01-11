@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-handwriting: 'Sue Ellen Francisco', cursive;
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
+  font-family: var(--font-sans);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+/* Custom Button Style */
+.btn-spacious {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0f172a;
+  box-shadow: 0px 5px 10px #000000cc;
+  text-shadow: 1px 1px 1px #000;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-spacious::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: inherit;
+  filter: blur(0);
+  z-index: -1;
+  background: conic-gradient(
+    #00000000 80deg,
+    #40baf7,
+    #f34ad7,
+    #5bfcc4,
+    #00000000 280deg
+  );
+  transition: all 0.3s ease;
+}
+
+.btn-spacious:hover::before {
+  filter: blur(15px);
+}
+
+.btn-spacious:active::before {
+  filter: blur(5px);
+  transform: translateY(1px);
+}
+
+.btn-spacious:active {
+  box-shadow: inset 0px 0px 5px #ffffffa9, inset 0px 35px 30px #000;
+  margin-top: 3px;
+}
