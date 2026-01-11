@@ -1,6 +1,8 @@
 # ExtraHands.ai 
 
-<img width="1811" height="1396" alt="image" src="[https://res.cloudinary.com/dusqnqgrb/image/upload/v1768137550/Screenshot_2026-01-11_184821_wmtg7h.png" />
+![ExtraHands.ai Banner](https://raw.githubusercontent.com/Sabyy027/Saas-Platform-Frontend/main/src/assets/Screenshot%202026-01-11%20184821.png)
+
+
 
 **Your Extra Hands for Content Creation, Editing, and Design.**
 
