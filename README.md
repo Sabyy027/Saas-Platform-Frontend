@@ -1,7 +1,6 @@
 # ExtraHands.ai 
 
-[ExtraHands.ai]([https://via.placeholder.com/1200x600.png?text=ExtraHands.ai+Dashboard](https://res.cloudinary.com/dusqnqgrb/image/upload/v1768137550/Screenshot_2026-01-11_184821_wmtg7h.png))
-
+<img width="1811" height="1396" alt="image" src="[https://github.com/user-attachments/assets/b4f918d9-e74e-4502-bf68-4104699a3e8e](https://via.placeholder.com/1200x600.png?text=ExtraHands.ai+Dashboard](https://res.cloudinary.com/dusqnqgrb/image/upload/v1768137550/Screenshot_2026-01-11_184821_wmtg7h.png)" />
 
 **Your Extra Hands for Content Creation, Editing, and Design.**
 
