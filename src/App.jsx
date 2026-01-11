@@ -294,7 +294,7 @@ function App() {
       <SignedIn>
         <div className="flex min-h-screen bg-slate-50">
           <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
-          <main className="flex-1 md:ml-64 p-8 min-h-screen transition-all duration-300">
+          <main className="flex-1 md:ml-64 p-4 md:p-8 min-h-screen transition-all duration-300">
             <div className="max-w-7xl mx-auto">
               <AnimatePresence mode="wait">
                 <motion.div

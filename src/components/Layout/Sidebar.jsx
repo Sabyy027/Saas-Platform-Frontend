@@ -107,13 +107,15 @@ const Sidebar = ({ activeTab, onTabChange }) => {
 
   return (
     <>
-      {/* Mobile Menu Button */}
-      <button 
-        className="md:hidden fixed top-4 left-4 z-50 p-2 bg-white text-slate-700 shadow-md rounded-lg border border-slate-200"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      {/* Mobile Menu Button - Only show when closed */}
+      {!isOpen && (
+        <button 
+          className="md:hidden fixed top-4 left-4 z-50 p-2 bg-white text-slate-700 shadow-md rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors"
+          onClick={() => setIsOpen(true)}
+        >
+          <Menu size={24} />
+        </button>
+      )}
 
       {/* Sidebar Container */}
       {/* Sidebar Container */}
@@ -122,9 +124,19 @@ const Sidebar = ({ activeTab, onTabChange }) => {
       } md:translate-x-0`}>
         
         {/* Logo Area */}
-        <div className="h-16 flex items-center gap-3 px-6 border-b border-slate-100">
-          <Logo className="w-10 h-auto" />
-          <span className="text-slate-900 font-bold text-xl tracking-tight">Extra<span className="text-indigo-600">Hands</span>.ai</span>
+        <div className="h-16 flex items-center justify-between px-6 border-b border-slate-100">
+          <div className="flex items-center gap-3">
+            <Logo className="w-10 h-auto" />
+            <span className="text-slate-900 font-bold text-xl tracking-tight">Extra<span className="text-indigo-600">Hands</span>.ai</span>
+          </div>
+          
+          {/* Mobile Close Button */}
+          <button 
+            onClick={() => setIsOpen(false)}
+            className="md:hidden p-2 -mr-2 text-slate-400 hover:text-slate-600 transition-colors rounded-lg hover:bg-slate-50"
+          >
+            <X size={20} />
+          </button>
         </div>
 
         {/* Navigation */}
