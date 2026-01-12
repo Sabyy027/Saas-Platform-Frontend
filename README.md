@@ -3,6 +3,10 @@
 ![ExtraHands.ai Banner](https://raw.githubusercontent.com/Sabyy027/Saas-Platform-Frontend/main/src/assets/Screenshot%202026-01-11%20184821.png)
 
 
+## 🔗 Links
+- 🌐 Live Demo: https://saas-platform-frontend.vercel.app
+- 💻 Frontend Repo: https://github.com/Sabyy027/Saas-Platform-Frontend
+- 🧠 Backend Repo: https://github.com/Sabyy027/Saas-Platform-Backend
 
 **Your Extra Hands for Content Creation, Editing, and Design.**
 
